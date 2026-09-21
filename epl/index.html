@@ -33,8 +33,8 @@ details .weekly{margin:0}
 .subdetail{margin:8px 10px;border-color:#e5eaee} .subdetail summary{padding:9px 11px;background:#f7f9fa}
 .detail-overview{padding-bottom:8px} .muted{color:#59636e;font-size:90%}
 @media(max-width:700px){.report-shell{padding:14px}.metric{min-width:120px}}
-</style></head><body><a href="../" style="display:inline-block;margin:16px 20px 0;color:#356448;text-decoration:none;font:600 14px system-ui,sans-serif">← All leagues</a><main class="report-shell"><h1>Premier League weekly rotation and market report</h1>
-<p><strong>Snapshot:</strong> 09/17/2026 06:11 AM PT &nbsp; <strong>Age:</strong> 0 hours ago</p>
+</style><style id="snapshot-warning-style">.snapshot-warning{padding:14px;border-left:4px solid #a97016;background:#fff6e6;color:#704b12;margin:14px 0}</style></head><body><a href="../" style="display:inline-block;margin:16px 20px 0;color:#356448;text-decoration:none;font:600 14px system-ui,sans-serif">← All leagues</a><main class="report-shell"><h1>Premier League weekly rotation and market report</h1><div class="snapshot-warning" data-snapshot-warning="2026-09-17T06:11:00-07:00">Saved snapshot — prices are not live.</div>
+<p><strong>Snapshot:</strong> 09/17/2026 06:11 AM PT &nbsp; <strong>Age:</strong> <time data-age="2026-09-17T06:11:00-07:00">See snapshot timestamp</time></p>
 
 <div class="report-header">
 <div class="metric"><strong>9</strong>Upcoming captured fixtures</div>
@@ -3770,4 +3770,4 @@ details .weekly{margin:0}
       <td>25</td>
     </tr>
   </tbody>
-</table></details></main></body></html>
+</table></details></main><script id="report-freshness">(()=>{function refresh(){document.querySelectorAll('[data-age]').forEach(e=>{const h=(Date.now()-Date.parse(e.dataset.age))/36e5;if(!Number.isFinite(h))return;e.textContent=h<1?'less than 1 hour ago':Math.floor(h)+' hours ago';});document.querySelectorAll('[data-stale]').forEach(e=>{const h=(Date.now()-Date.parse(e.dataset.stale))/36e5;e.textContent=h>2?'Schedule update overdue — capture status may have changed.':'';});document.querySelectorAll('[data-snapshot-warning]').forEach(e=>{const h=(Date.now()-Date.parse(e.dataset.snapshotWarning))/36e5;e.textContent=h>24?'Saved snapshot — prices are not live. Captured '+Math.floor(h/24)+' days ago.':'Saved snapshot — prices are not live.';});}refresh();setInterval(refresh,60000);})();</script></body></html>
